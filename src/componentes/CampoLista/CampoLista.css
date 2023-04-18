@@ -1,0 +1,21 @@
+.CampoGrupo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;;
+}
+
+.CampoGrupo-label {
+    text-align: left;
+    font-size: 1rem;
+    color: var(--letra-oscura);
+}
+
+.CampoGrupo-select {
+    padding: 1rem 1rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--letra-clara);
+    outline-color: var(--primero);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    background: #fff;
+}

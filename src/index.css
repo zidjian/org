@@ -1,10 +1,18 @@
+/* Colores */
+
+:root {
+  --primero: #6278F7;
+  --segundo: #95FFD4;
+  --tercero: #F2F2F2;
+  --letra-clara: #A4A4A4;
+  --letra-oscura: #212121;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Prata', serif;
+  font-size: 16px;
+  color: var(--letra-oscura);
 }
 
 code {
