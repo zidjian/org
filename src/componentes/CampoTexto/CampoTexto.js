@@ -9,6 +9,7 @@ function CampoTexto(props) {
                 type="text"
                 className="CampoGrupo-input"
                 placeholder={placeholder}
+                required={props.required}
             />
         </div>
     );
