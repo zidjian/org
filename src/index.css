@@ -25,3 +25,19 @@ code {
     width: calc(100% - 2rem);
     margin: auto;
 }
+
+@media screen and (min-width: 768px) {
+    .seccion-contenedor {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .seccion-contenedor {
+        width: 70%;
+        margin: auto;
+    }
+
+}

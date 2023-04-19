@@ -1,0 +1,18 @@
+.equipo {
+    background-color: #D9F7E9;
+    padding: 2rem 0;
+}
+
+.seccion-titulo {
+    color: 212121;
+    display: inline-block;
+    padding-bottom: .5rem;
+    border-bottom: solid 4px #57C278;
+}
+
+.colaboradores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}

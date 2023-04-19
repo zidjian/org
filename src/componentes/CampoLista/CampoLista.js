@@ -1,15 +1,9 @@
 import "./CampoLista.css";
 
 function CampoLista(props) {
-    const equipos = [
-        "Programación",
-        "Front End",
-        "Data Science",
-        "Devops",
-        "UX y Diseño",
-        "Móvil",
-        "Innovación y  Gestión",
-    ];
+    function actualizarValor(e) {
+        props.setValor(e.target.value);
+    }
     return (
         <div className="CampoGrupo">
             <label className="CampoGrupo-label">Equipo</label>
@@ -17,16 +11,17 @@ function CampoLista(props) {
                 className="CampoGrupo-select"
                 defaultValue={""}
                 required={props.required}
+                valor={props.valor}
+                onChange={actualizarValor}
             >
                 <option
                     value=""
                     disabled
                     hidden
-                    className="CampoGrupo-noselecionado"
                 >
                     Seleccione un {props.tipo}
                 </option>
-                {equipos.map((equipo, indice) => {
+                {props.equipos.map((equipo, indice) => {
                     return <option key={indice}>{equipo}</option>;
                 })}
             </select>

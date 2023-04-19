@@ -1,0 +1,45 @@
+.piepagina {
+    background: var(--primero);
+    padding: 2rem 0;
+}
+
+.piepagina-contendio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright-texto {
+    color: var(--letra-clara);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .piepagina-contendio {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .piepagina-contendio > * {
+        width: 33%;
+    }
+
+    .social-lista {
+        text-align: left;
+    }
+
+    .copyright-texto {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}

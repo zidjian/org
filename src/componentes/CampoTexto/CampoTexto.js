@@ -1,6 +1,9 @@
 import "./CampoTexto.css";
 
 function CampoTexto(props) {
+    function actualizarValor(e) {
+        props.setValor(e.target.value);
+    }
     const placeholder = `Escribe aqui el ${props.tipo.toLowerCase()}...`;
     return (
         <div className="CampoGrupo">
@@ -10,6 +13,8 @@ function CampoTexto(props) {
                 className="CampoGrupo-input"
                 placeholder={placeholder}
                 required={props.required}
+                value={props.valor}
+                onChange={actualizarValor}
             />
         </div>
     );
