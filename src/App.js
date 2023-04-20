@@ -21,7 +21,7 @@ function App() {
         },
         {
             id: uuidv4(),
-            nombre: 'Harland Lora',
+            nombre: 'Harland Lohora',
             puesto: 'Instructor',
             foto: 'https://github.com/harlandlohora.png',
             equipo: 'Front End',
