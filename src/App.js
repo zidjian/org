@@ -13,10 +13,34 @@ function App() {
     const [colaboradores, setColaboradores] = useState([
         {
             id: uuidv4(),
-            nombre: 'Waldir',
-            puesto: 'Instructor',
+            nombre: 'Waldir Maidana',
+            puesto: 'Desarrallador web',
             foto: 'https://www.github.com/zidjian.png',
-            equipo: 'Programación',
+            equipo: 'Front End',
+            fav: false
+        },
+        {
+            id: uuidv4(),
+            nombre: 'Harland Lora',
+            puesto: 'Instructor',
+            foto: 'https://github.com/harlandlohora.png',
+            equipo: 'Front End',
+            fav: false
+        },
+        {
+            id: uuidv4(),
+            nombre: 'Geneys',
+            puesto: 'Instructor',
+            foto: 'https://github.com/genesysaluralatam.png',
+            equipo: 'Devops',
+            fav: false
+        },
+        {
+            id: uuidv4(),
+            nombre: 'Jean Marie',
+            puesto: 'Instructor',
+            foto: 'https://github.com/JeanmarieAluraLatam.png',
+            equipo: 'Móvil',
             fav: false
         }
     ]);
@@ -62,6 +86,12 @@ function App() {
             titulo: "Innovación y  Gestión",
             colorPrimario: "#FF8A29",
             colorSecundario: "#FFEEDF",
+        },
+        {
+            id: uuidv4(),
+            titulo: "Estudiante",
+            colorPrimario: "rgb(156, 79, 232)",
+            colorSecundario: "rgba(156, 79, 232, 0.4)F",
         },
     ]);
 

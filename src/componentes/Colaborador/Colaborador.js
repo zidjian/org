@@ -17,7 +17,7 @@ function Colaborador(props) {
                 <p className='colaborador-puesto'>{puesto}</p>
             </div>
             {
-                fav ? <AiFillHeart color="red" onClick={() => favorito(id)} /> : <AiOutlineHeart onClick={() => favorito(id)} />
+                fav ? <AiFillHeart color="red" onClick={() => favorito(id)} className='colaborador-icono' /> : <AiOutlineHeart onClick={() => favorito(id)} className='colaborador-icono' />
             }
         </div>
     );

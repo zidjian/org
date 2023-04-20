@@ -43,6 +43,12 @@
     -o-transform: translate(50%, -50%);
 }
 
+.colaborador-icono {
+    margin-top: 1rem;
+    width: 2rem;
+    height: auto;
+}
+
 @media screen and (min-width: 768px) {
     .colaborador {
         width: calc(25% - (3rem / 4));
