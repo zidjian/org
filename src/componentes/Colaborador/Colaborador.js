@@ -1,11 +1,11 @@
 import './Colaborador.css';
-import { AiFillCloseCircle } from "react-icons/ai";
+import { AiFillCloseCircle, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
 function Colaborador(props) {
-    const {nombre, puesto, foto, id} = props.colaborador;
-    const {color, eliminarColaborador} = props;
+    const {nombre, puesto, foto, id, fav} = props.colaborador;
+    const {color, eliminarColaborador, favorito} = props;
     const b_color = `linear-gradient(0deg, #FFFFFF 70%, ${color} 70%)`;
-    
+
     return (
         <div className='colaborador' style={{background: b_color}}>
             <AiFillCloseCircle className='colaborador-eliminar' onClick={() => eliminarColaborador(id)} />
@@ -16,6 +16,9 @@ function Colaborador(props) {
                 <h3 className='colaborador-nombre'>{nombre}</h3>
                 <p className='colaborador-puesto'>{puesto}</p>
             </div>
+            {
+                fav ? <AiFillHeart color="red" onClick={() => favorito(id)} /> : <AiOutlineHeart onClick={() => favorito(id)} />
+            }
         </div>
     );
 }

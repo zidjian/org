@@ -3,7 +3,7 @@ import Colaborador from "./../Colaborador/Colaborador";
 
 function Equipo(props) {
     const { titulo, colorPrimario, colorSecundario, id } = props.equipo;
-    const { colaboradores, eliminarColaborador, actualizarColor } = props;
+    const { colaboradores, eliminarColaborador, actualizarColor, favorito } = props;
     return (
         colaboradores.length > 0 && (
             <section
@@ -33,6 +33,7 @@ function Equipo(props) {
                                     color={colorPrimario}
                                     key={indice}
                                     eliminarColaborador={eliminarColaborador}
+                                    favorito={favorito}
                                 />
                             );
                         })}

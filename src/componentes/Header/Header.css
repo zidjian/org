@@ -1,7 +1,80 @@
 .cabecera {
     width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.cabecera img {
+.cabecera-contenido {
+    padding: 2rem 0;
+}
+
+.cabecera-imagen{
     width: 100%;
+}
+
+/* Logo */
+
+.logo-imagen {
+    width: 4rem;
+    height: auto;
+}
+
+/* Eslogan */
+
+.eslogan {
+    color: var(--letra-clara);
+}
+
+.eslogan-titulo {
+    font-family: 'Prata';
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.eslogan-info {
+    margin-top: .2rem;
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecera {
+        overflow: hidden;
+    }
+
+    .cabecera-contenido {
+        padding: 4rem 0;
+        text-align: left;
+    }
+
+    .cabecera-imagen{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecera-imagen{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        width: 30%;
+    }
+
+    .eslogan-titulo {
+        font-size: 1.5rem;
+    }
+    
+    .eslogan-info {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
 }

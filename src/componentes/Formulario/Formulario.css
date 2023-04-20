@@ -1,3 +1,7 @@
+.formulario {
+    padding: 2rem 0 0 0;
+}
+
 .formulario-contenido {
     display: flex;
     flex-wrap: wrap;

@@ -1,7 +1,7 @@
 import "./Formulario.css";
 import hexToRgba from "hex-to-rgba";
 import {v4 as uuidv4} from 'uuid';
-import CampoGrupo from "./../CampoTexto/CampoTexto";
+import Campo from "../Campo/Campo";
 import CampoLista from "./../CampoLista/CampoLista";
 import Boton from "./../Boton/Boton";
 import { useState } from "react";
@@ -53,26 +53,26 @@ function Formulario(props) {
                     <h1 className="formulario-titulo">
                         Rellena el formulario para crear el colaborador.
                     </h1>
-                    <CampoGrupo
-                        tipo="Nombre"
+                    <Campo
+                        nombre="Nombre"
                         required
                         valor={nombre}
                         setValor={setNombre}
                     />
-                    <CampoGrupo
-                        tipo="Puesto"
+                    <Campo
+                        nombre="Puesto"
                         required
                         valor={puesto}
                         setValor={setPuesto}
                     />
-                    <CampoGrupo
-                        tipo="Foto"
+                    <Campo
+                        nombre="Foto"
                         required
                         valor={foto}
                         setValor={setFoto}
                     />
                     <CampoLista
-                        tipo="equipo"
+                        nombre="equipo"
                         required
                         valor={equipo}
                         setValor={setEquipo}
@@ -84,17 +84,18 @@ function Formulario(props) {
                     <h1 className="formulario-titulo">
                         Rellena el formulario para crear el equipos.
                     </h1>
-                    <CampoGrupo
-                        tipo="Titutlo"
+                    <Campo
+                        nombre="Titutlo"
                         required
                         valor={titulo}
                         setValor={setTitulo}
                     />
-                    <CampoGrupo
-                        tipo="Color"
+                    <Campo
+                        nombre="Color"
                         required
                         valor={color}
                         setValor={setColor}
+                        tipo="color"
                     />
                     <Boton />
                 </form>

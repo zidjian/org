@@ -9,14 +9,15 @@ import Footer from "./componentes/Footer/Footer.js";
 import { useState } from "react";
 
 function App() {
-    const [toggle, mostrarFormulario] = useState(false);
+    const [toggle, mostrarFormulario] = useState(true);
     const [colaboradores, setColaboradores] = useState([
         {
             id: uuidv4(),
             nombre: 'Waldir',
             puesto: 'Instructor',
             foto: 'https://www.github.com/zidjian.png',
-            equipo: 'Programación'
+            equipo: 'Programación',
+            fav: false
         }
     ]);
     const [equipos, setEquipos] = useState([
@@ -90,12 +91,23 @@ function App() {
     // Actualizar Equipos
     function registrarEquipo(equipo) {
         setEquipos([...equipos, equipo]);
-
     }
 
     const registrarColaborador = (colaborador) => {
         setColaboradores([...colaboradores, colaborador]);
     };
+
+    // Favorito
+
+    function favorito(id) {
+        const colaboradores_actualizados = colaboradores.map(colaborador => {
+            if(id === colaborador.id) {
+                colaborador.fav = !colaborador.fav;
+            }
+            return colaborador;
+        })
+        setColaboradores(colaboradores_actualizados);
+    }
 
     return (
         <div className="App">
@@ -119,6 +131,7 @@ function App() {
                         key={indice}
                         eliminarColaborador={eliminarColaborador}
                         actualizarColor={actualizarColor}
+                        favorito={favorito}
                     />
                 );
             })}
