@@ -1,6 +1,7 @@
 .equipo {
     background-color: #D9F7E9;
     padding: 2rem 0;
+    position: relative;
 }
 
 .seccion-titulo {
@@ -15,4 +16,10 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-evenly;
+}
+
+.equipo-color {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }

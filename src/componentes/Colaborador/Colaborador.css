@@ -2,7 +2,7 @@
     width: calc(50% - .5rem);
     padding: 1rem;
     box-sizing: border-box;
-    /* background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(0,0,0,1) 70%); */
+    position: relative;
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -28,6 +28,19 @@
 
 .colaborador-puesto {
     margin: 0;
+}
+
+.colaborador-eliminar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
 }
 
 @media screen and (min-width: 768px) {
